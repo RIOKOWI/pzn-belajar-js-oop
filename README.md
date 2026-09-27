@@ -14,3 +14,6 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 - Setiap Object selalu dibuat dari Class
 - Dan sebuah Class bisa membuat Object tanpa batas
 
+## OOP di JavaScript
+- JavaScript sendiri sebenarnya sejak awal dibuat sebagai bahasa prosedural, bukan bahasa pemrograman berorientasi objek
+- Oleh karena, implementasi OOP di JavaScript memang tidak sedetail bahasa pemrograman lain yang memang dari awal merupakan bahasa pemrograman OOP seperti Java atau C++
