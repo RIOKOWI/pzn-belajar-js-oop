@@ -29,5 +29,9 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 - Untuk membuat class di JavaScript lama, kita bisa membuat function
 - Function ini kita sebut dengan Constructor Function
 
+## Membuat Object dari Constructor Function
+- Setelah kita membuat class, jika kita ingin membuat object dari class tersebut, kita bisa menggunakan kata kunci new, lalu diikuti dengan nama constructor function nya 
+
+
 ### Contoh di file :
 - `object.html`
