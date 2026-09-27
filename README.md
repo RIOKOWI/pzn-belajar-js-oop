@@ -17,3 +17,10 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 ## OOP di JavaScript
 - JavaScript sendiri sebenarnya sejak awal dibuat sebagai bahasa prosedural, bukan bahasa pemrograman berorientasi objek
 - Oleh karena, implementasi OOP di JavaScript memang tidak sedetail bahasa pemrograman lain yang memang dari awal merupakan bahasa pemrograman OOP seperti Java atau C++
+
+
+# Membuat Constructor Function
+## Membuat Object
+- Sebenarnya kita sudah belajar tipe data object, dengan cara membuat variable dengan tipe data object
+- Namun pembuatan object menggunakan tipe data object, akan membuat object yang selalu unik, sedangkan dalam OOP, biasanya kita akan membuat class sebagai cetakan, sehingga bisa membuat object dengan karakteristik yang sama berkali, kali, tanpa harus mendeklarasikan object berkali-kali seperti menggunakan tipe data object
+
