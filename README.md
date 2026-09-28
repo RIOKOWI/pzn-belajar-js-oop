@@ -53,3 +53,9 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 
 ### Contoh di file :
 - `object.html`
+
+# Parameter di Constructor Function
+## Parameter di Constructor Function
+- Karena dalam JavaScript, class adalah berbentuk function, jadi secara default, function tersebut bisa memiliki parameter
+- Constructor function sama seperti function biasanya, bisa memiliki parameter, hal ini membuat ketika kita membuat object, kita bisa mengirim langsung data lewat parameter di constructor function tersebut
+

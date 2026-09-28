@@ -9,22 +9,23 @@
     
 </body>
 <script>
-    function OrangPremium() { // best practice nya pakai kapital di depan setiap kata
-        this.namaDepan = ""; // membuat property
-        this.namaBelakang = "";
+    // tambahin parameter di constructor function
+    function OrangPremium(namaDepan, namaBelakang) { // best practice nya pakai kapital di depan setiap kata
+        this.namaDepan = namaDepan; // membuat property
+        this.namaBelakang = namaBelakang;
         this.sayHello = function (name) { // membuat method di constructor function
             console.info(`Hello ${name}, my name is ${this.namaDepan}`);
         }
     }
 
-    const rio = new OrangPremium(); // cara membuat object
-    rio.namaDepan = "Rio"; // tambah value property
-    rio.namaBelakang = "Achyar";
+    const rio = new OrangPremium("Rio", "Achyar"); // cara membuat object
+    // rio.namaDepan = "Rio"; // tambah value property
+    // rio.namaBelakang = "Achyar";
     rio.sayHello("bedul"); // panggil method di constructor function
     
-    const coy = new OrangPremium();
-    coy.namaDepan = "Wanda";
-    coy.namaBelakang = "Wancoy";
+    const coy = new OrangPremium("Wanda", "Wancoy");
+    // coy.namaDepan = "Wanda";
+    // coy.namaBelakang = "Wancoy";
     coy.sayHello("rico");
 
     console.log(rio);
