@@ -18,21 +18,39 @@
     }
 
     // contoh prototype inheritance yang salah
-    Manager.prototype = Employee.prototype;
+    // Manager.prototype = Employee.prototype;
+    
+    // Manager.prototype.sayHello = function (name) {
+        //     console.info(`Hello ${name}, my name is manager ${this.name}`)
+    // }
+
+    // Employee.prototype.sayHello = function (name) {
+    //     console.info(`Hello ${name}, my name is employee ${this.name}`)
+    // }
+
+    // const employee = new Employee("Rio");
+    // employee.sayHello("Achyar");
+
+    // const manager = new Manager("bedul");
+    // manager.sayHello("bedugul");
+
+
+    // contoh prototype inheritance yang benar
+    Manager.prototype = Object.create(Employee.prototype);
 
     Manager.prototype.sayHello = function (name) {
-        console.info(`Hello ${name}, my name is manager ${this.name}`)
+        console.info(`Hello ${name}, my name is Employee ${this.name}`);
     }
 
     Employee.prototype.sayHello = function (name) {
-        console.info(`Hello ${name}, my name is employee ${this.name}`)
+        console.info(`Hello ${name}, my name is Manager ${this.name}`);
     }
 
-    const employee = new Employee("Rio");
-    employee.sayHello("Achyar");
+    const employee = new Employee("bedul");
+    employee.sayHello("bedugul");
 
-    const manager = new Manager("bedul");
-    manager.sayHello("bedugul");
+    const manager = new Manager("rio");
+    manager.sayHello("achyar");
 
 </script>
 </html>
