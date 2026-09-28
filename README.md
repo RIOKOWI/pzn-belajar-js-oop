@@ -45,3 +45,11 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 
 ### Contoh di file :
 - `object.html`
+
+
+# Method di Constructor Function
+- Sama seperti pada tipe data object biasanya, kita juga bisa menambahkan method di dalam constructor function
+- Jika kita tambahkan method di constructor function, secara otomatis object yang dibuat akan memiliki method tersebut
+
+### Contoh di file :
+- `object.html`

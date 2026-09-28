@@ -12,15 +12,20 @@
     function OrangPremium() { // best practice nya pakai kapital di depan setiap kata
         this.namaDepan = ""; // membuat property
         this.namaBelakang = "";
+        this.sayHello = function (name) { // membuat method di constructor function
+            console.info(`Hello ${name}, my name is ${this.namaDepan}`);
+        }
     }
 
     const rio = new OrangPremium(); // cara membuat object
     rio.namaDepan = "Rio"; // tambah value property
     rio.namaBelakang = "Achyar";
+    rio.sayHello("bedul"); // panggil method di constructor function
     
     const coy = new OrangPremium();
     coy.namaDepan = "Wanda";
     coy.namaBelakang = "Wancoy";
+    coy.sayHello("rico");
 
     console.log(rio);
     console.log(coy);
