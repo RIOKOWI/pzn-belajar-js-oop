@@ -10,11 +10,19 @@
 </body>
 <script>
     function OrangPremium() { // best practice nya pakai kapital di depan setiap kata
-
+        this.namaDepan = ""; // membuat property
+        this.namaBelakang = "";
     }
 
-    new rio = new OrangPremium(); // cara membuat object
-    new coy = new OrangPremium();
+    const rio = new OrangPremium(); // cara membuat object
+    rio.namaDepan = "Rio"; // tambah value property
+    rio.namaBelakang = "Achyar";
+    
+    const coy = new OrangPremium();
+    coy.namaDepan = "Wanda";
+    coy.namaBelakang = "Wancoy";
 
+    console.log(rio);
+    console.log(coy);
 </script>
 </html>
