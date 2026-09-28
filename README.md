@@ -59,3 +59,14 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 - Karena dalam JavaScript, class adalah berbentuk function, jadi secara default, function tersebut bisa memiliki parameter
 - Constructor function sama seperti function biasanya, bisa memiliki parameter, hal ini membuat ketika kita membuat object, kita bisa mengirim langsung data lewat parameter di constructor function tersebut
 
+### Contoh di file :
+- `object.html`
+
+# Constructor Inheritance
+## Constructor Inheritance
+- Dalam constructor kita biasanya membuat property baik itu berisi value ataupun function
+- Di dalam constructor, kita bisa memanggil constructor lain, dengan begitu kita bisa mewarisi semua property yang dibuat di constructor lain tersebut
+- Untuk memanggil constructor lain, kita bisa menggunakan NamaConstructor.call(this, parameter)
+
+### Contoh di file :
+- `constructor-inheritance.html`

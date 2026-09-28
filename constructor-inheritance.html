@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>    
+    function Employee(firstName){ // function target buat inheritance
+        this.firstName = firstName;
+        this.sayHello = function(name) {
+            console.info(`Hello ${name}, my name is ${this.firstName}`);
+        }
+    }
+
+    function Manager(firstName, lastName){
+        this.lastName = lastName;
+        Employee.call(this, firstName); // panggil constructor function di dalam constructor function
+    }
+
+    const rio = new Manager("Rio", "Achyar"); // fisrstname dari func Employee & lastName dari func Manager
+    console.info(rio);
+</script>
+</html>
