@@ -136,3 +136,15 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 
 ### Contoh di file :
 - `class-method.html`
+
+
+# Class Inheritance
+## Class Inheritance
+- Sebelumnya kita sudah tahu bahwa prototype mendukung pewarisan, walaupun agak sedikit tricky cara pembuatannya
+- Untungnya itu diperbaiki di ES6 dengan fitur class nya
+- Sebuah class bisa melakukan pewarisan dari class lainnya dengan menggunakan kata kunci `extends`
+- Di JavaScript, class inheritance sama seperti prototype inheritance, hanya bisa memiliki satu parent class
+
+### Contoh di file :
+- `class-inheritance.html`
+
