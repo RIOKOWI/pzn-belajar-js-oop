@@ -195,4 +195,14 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 ### Contoh di file :
 - `public-class-field.html`
 
+# Private Class Field
+## Private Class Field
+- Secara default, saat kita menambahkan field, maka field tersebut bisa diakses dari manapun
+- Jika kita ingin membuat field yang bersifat private (hanya bisa diakses di dalam class), kita bisa menggunakan tanda # sebelum nama field nya
+- Ini dinamakan private class field, dan hanya bisa diakses dari dalam class saja
+
+### Contoh di file :
+- `private-class-field.html`
+
+
 

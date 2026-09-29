@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class Hitung {
+        #counter = 0; // field yang cuma bisa di akses di dalam class
+
+        increment() {
+            this.#counter++; // tambah
+        }
+        decrement() {
+            this.#counter--; // kurang
+        }
+        get() {
+            return this.#counter; // ambil data baru
+        }
+    }
+
+    const counter = new Hitung();
+    counter.increment();
+    counter.increment();
+    counter.increment();
+    counter.decrement();
+    console.info(counter.get());
+
+    
+</script>
+</html>
