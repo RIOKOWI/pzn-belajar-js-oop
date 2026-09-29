@@ -277,6 +277,16 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 - Pada block try, kita akan mencoba mengakses kode program yang bisa menyebabkan error, dan jika terjadi error, block try akan berhenti dan otomatis masuk ke block catch
 - Jika tidak terjadi error, block catch tidak akan dieksekusi
 
+## Kata Kunci finally
+- Kadang kita ingin melakukan sesuatu entah itu terjadi error ataupun tidak
+- Dalam try catch, kita bisa menambahkan block finally
+- Block finally ini akan selalu dieksekusi setelah try catch selesai, entah terjadi error atau tidak, block finally akan selalu dieksekusi
+
+## Try Finally
+- Kata kunci finally juga bisa digunakan tanpa perlu menggunakan catch 
+- Biasanya ini digunakan dalam kasus tertentu
+
+
 ### Contoh di file :
 - `error-handling.html`
 

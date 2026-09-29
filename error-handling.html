@@ -25,11 +25,35 @@
 
     try { // cara membuat error handling
         console.info(Math.sum());
-        console.info("Rio");
+        console.info("Rio"); // kalo ada error block ini gak di eksekusi
     } catch (error) {
         console.info(`Terjadi error : ${error.message}`); // tampilkan pesan error
+    } finally {
+        console.info("kode program selesai");
     }
 
     console.info("rio")
+
+
+    class Counter {
+        constructor(value) {
+            this.value = 1;
+        }
+
+        next() {
+            try {
+                return this.value;
+            } finally {
+                this.value++; // cara membuat try finally
+            }
+        }
+    }
+
+    const counter = new Counter();
+    console.info(counter.next());
+    console.info(counter.next());
+    console.info(counter.next());
+    console.info(counter.next());
+    console.info(counter.next());
 </script>
 </html>
