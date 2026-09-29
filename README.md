@@ -126,3 +126,13 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 
 ### Contoh di file :
 - `class-property.html`
+
+# Method di Class
+## Method di Class
+- Membuat method di class sebenarnya bisa dilakukan dengan cara seperti menambahkan method di constructor function
+- Namun, hal tersebut sebenarnya menambahkan method ke dalam instance object
+- Khusus untuk method sebaiknya kita menambahkan ke prototype, bukan ke instance object
+- Untung nya di class, ada cara mudah menambahkan method dan secara otomatis ditambahkan ke prototype
+
+### Contoh di file :
+- `class-method.html`
