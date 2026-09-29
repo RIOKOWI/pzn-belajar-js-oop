@@ -269,7 +269,16 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 - `static-method.html`
 
 
+# Error Handling
+## Error Handling
+- Saat terjadi error di kode program JavaScript, kadang kita tidak ingin program kita berhenti
+- Di JavaScript, kita bisa menangkap jika terjadi error
+- Kita bisa menggunakan try catch statement untuk menangkap error
+- Pada block try, kita akan mencoba mengakses kode program yang bisa menyebabkan error, dan jika terjadi error, block try akan berhenti dan otomatis masuk ke block catch
+- Jika tidak terjadi error, block catch tidak akan dieksekusi
 
+### Contoh di file :
+- `error-handling.html`
 
 
 
