@@ -239,8 +239,16 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 - Cara mengakses static class field pun tidak lagi lewat object, melainkan lewat class nya
 - Static class field bisa diartikan sifatnya global, tidak peduli diakses dimana atau siapa yang mengakses, hasilnya akan sama
 
-
 ### Contoh di file :
 - `static-class-field.html`
+
+# Static Method
+## Static Method
+- Kata kunci static juga tidak hanya bisa ditambahkan di field, tapi juga di method
+- Jika kita tambahkan di method, artinya method tersebut jadi milik class nya, bukan prototype
+- Dan untuk mengakses method tersebut, kita juga bisa lakukan seperti mengakses static class field
+
+### Contoh di file :
+- `static-method.html`
 
 
