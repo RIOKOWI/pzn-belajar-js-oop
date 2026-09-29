@@ -300,5 +300,22 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 ### Contoh di file :
 - `error-class.html`
 
+# Iterable dan Iterator
+## Iterable dan Iterator
+- Salah satu fitur terbaru di ES6 adalah iterable
+- Iterable adalah spesial object yang memiliki standarisasi
+- Dengan mengikuti standarisasi Iterable, secara otomatis kita bisa melakukan iterasi terdapat data tersebut dengan menggunakan perulangan for...of
+- Contoh yang sudah mengikuti standarisasi Iterable adalah string, Array, Object, dan lain-lain
+
+## Cara Kerja Iterable dan Iterator
+- Jika kita mengikuti kontrak Iterable, maka object yang kita buat akan bisa dilakukan iterasi menggunakan for...of
+- Setiap kita melakukan perulangan, object Iterator akan dibuat
+- Hal ini menjadi aman jika kita melakukan iterasi berulang-ulang, karena Iterator baru akan dibuat terus menerus
+
+### Contoh di file :
+- `iterable-iterator.html`
+
+
+
 
 
