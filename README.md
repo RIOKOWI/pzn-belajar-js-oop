@@ -215,6 +215,8 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 ### Contoh di file :
 - `private-method.html`
 
-
-
+# Operator instanceof
+- Kadang ada kasus kita ingin mengecek apakah sebuah object merupakan instance dari class tertentu atau bukan
+- Kita tidak bisa menggunakan operator typeof, karena object dari class, jika kita gunakan operator typeof, hasilnya adalah “object”
+- Operator instanceof akan menghasilkan boolean, true jika benar object tersebut adalah instance object nya, atau false jika bukan
 
