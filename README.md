@@ -97,3 +97,16 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 - Sekarang kita sudah tahu, bahwa prototype selalu memiliki parent, artinya dia adalah turunan, parent tertinggi adalah Object prototype
 - Pertanyaannya bagaimana jika kita ingin melakukan inheritance ke Prototype lain?
 - Hal ini juga bisa dilakukan, namun agak sedikit tricky, karena hal ini, sebenarnya untuk JavaScript modern, tidak direkomendasikan lagi praktek OOP menggunakan Prototype, karena di ES6 sudah dikenalkan kata kunci class yang akan nanti dibahas di chapter tersendiri
+
+### Contoh di file :
+- `prototype.html.html`
+- `prototype-inheritance.html`
+
+# Kata Kunci Class
+## Membuat Class
+- Sejak EcmaScript versi 6, diperkenalkan kata kunci baru, yaitu class, ini merupakan kata kunci yang digunakan untuk membuat class di JavaScript
+- Dengan kata kunci class, kita tidak perlu lagi menggunakan constructor function untuk membuat class
+
+### Contoh di file :
+- `class.html`
+
