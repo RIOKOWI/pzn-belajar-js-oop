@@ -9,11 +9,13 @@
     
 </body>
 <script>
-    class Person{ // cara membuat class
-
+    class Person {
+        constructor(name){ // cara membuat constructor class
+            console.info(`Halo ${name}`)
+        }
     }
 
-    const rio = new Person();
+    const rio = new Person("Rio"); // isi constructor class
     console.info(rio)
 </script>
 </html>
