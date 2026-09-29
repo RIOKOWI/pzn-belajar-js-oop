@@ -290,5 +290,15 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 ### Contoh di file :
 - `error-handling.html`
 
+# Membuat Class Error Manual
+## Membuat Class Error Manual
+- Walaupun JavaScript sudah memiliki standard class Error
+- Namun alangkah baiknya, kita membedakan tiap jenis error
+- Untuk membuat error sendiri secara manual sangatlah mudah, cukup membuat class turunan dari class Error
+- Dan jangan lupa tambahkan parameter message, agar bisa dikirimkan ke parameter di constructor class Error
+
+### Contoh di file :
+- `error-class.html`
+
 
 

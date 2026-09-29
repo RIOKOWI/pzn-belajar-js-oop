@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class ValidationError extends Error { // cara nembuat erro class
+        constructor (message, field) {
+            super(message);
+            this.field = field;
+        }
+    }
+
+    class Math {
+        static sum(...numbers){ 
+            if (numbers.length == 0) { 
+                throw new ValidationError("Salah Woi gaboleh 0", "numbers")
+            }
+
+            let total = 0;
+            for (const number of numbers){
+                total += number
+            }
+            return total;
+        }
+    }
+
+    try { 
+        console.info(Math.sum());
+    } catch (error) {
+        if (error instanceof ValidationError) {
+            console.info(`Terjadi error di field : ${error.field}, dengan pesan : ${error.message}`); // tampilkan pesan error class manual field dan message
+        } else {
+            console.info(`Terjadi error : ${error.message}`); // tampilkan pesan error bawaan
+        }
+    } finally {
+        console.info("kode program selesai");
+    }
+
+    console.info("rio")
+
+
+    class Counter {
+        constructor(value) {
+            this.value = 1;
+        }
+
+        next() {
+            try {
+                return this.value;
+            } finally {
+                this.value++; // cara membuat try finally
+            }
+        }
+    }
+
+    const counter = new Counter();
+    console.info(counter.next());
+    console.info(counter.next());
+    console.info(counter.next());
+    console.info(counter.next());
+    console.info(counter.next());
+</script>
+</html>
