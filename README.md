@@ -156,4 +156,9 @@ Object adalah data yang berisi field / properties / attributes dan method / func
 - Kata kunci super digunakan untuk memanggil constructor super class
 - Jika di child class kita membuat constructor, maka kita wajib memanggil parent constructor, walaupun di parent tidak ada constructor
 
+# Super Method
+## Super Method
 
+- Selain digunakan untuk memanggil constructor milih parent class, kata kunci super juga bisa digunakan untuk mengakses method parent class
+- Caranya bisa menggunakan super titik nama function nya
+- Dengan kata lain, super sebenarnya adalah reference ke parent prototype, mirip seperti __proto__
