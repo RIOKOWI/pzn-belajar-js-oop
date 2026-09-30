@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protoype</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function OrangPremium(namaDepan, namaBelakang) {
+        this.namaDepan = namaDepan;
+        this.namaBelakang = namaBelakang;
+        this.sayHello = function (name) {
+            console.info(`Hello ${name}, my name is ${this.namaDepan}`);
+        }
+    }
+
+    OrangPremium.prototype.sayBye = function (){ // menambahkan property ke prototype
+        console.info('dadah');
+    }
+
+    OrangPremium.prototype.run = function (){
+        console.info(`${this.namaDepan} is Runing`);
+    }
+
+    const rio = new OrangPremium("Rio", "Achyar");
+    // rio.sayBye = function () {
+    //     console.info('Bye')
+    // } // cuma ada di object rio
+
+    const coy = new OrangPremium("Wanda", "Wancoy");
+
+    console.log(rio);
+    console.log(coy);
+
+    rio.sayBye();
+    rio.run("rio");
+</script>
+</html>

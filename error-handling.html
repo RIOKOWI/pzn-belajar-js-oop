@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class Math {
+        static sum(...numbers){ 
+            if (numbers.length == 0) { // cara membuat throw error
+                throw new Error ("harus lebih dari 0")
+            }
+
+            let total = 0;
+            for (const number of numbers){
+                total += number
+            }
+            return total;
+        }
+    }
+
+    try { // cara membuat error handling
+        console.info(Math.sum());
+        console.info("Rio"); // kalo ada error block ini gak di eksekusi
+    } catch (error) {
+        console.info(`Terjadi error : ${error.message}`); // tampilkan pesan error
+    } finally {
+        console.info("kode program selesai");
+    }
+
+    console.info("rio")
+
+
+    class Counter {
+        constructor(value) {
+            this.value = 1;
+        }
+
+        next() {
+            try {
+                return this.value;
+            } finally {
+                this.value++; // cara membuat try finally
+            }
+        }
+    }
+
+    const counter = new Counter();
+    console.info(counter.next());
+    console.info(counter.next());
+    console.info(counter.next());
+    console.info(counter.next());
+    console.info(counter.next());
+</script>
+</html>

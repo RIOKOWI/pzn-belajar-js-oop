@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class Math {
+        static sum(...numbers){ // cara membuat static method
+            if (numbers.length == 0) { // cara membuat throw error
+                throw new Error ("harus lebih dari 0")
+            }
+
+            let total = 0;
+            for (const number of numbers){
+                total += number
+            }
+            return total;
+        }
+    }
+
+    const error = Math.sum();
+    const sum = Math.sum(1,1,1,1,1,1,1); // cara akses static method
+    console.info(sum)
+</script>
+</html>
