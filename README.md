@@ -1,3 +1,6 @@
+# DOCS
+`https://docs.google.com/presentation/d/1kZJB3w5Zgnr4bUCjHMs9LdBGurnT8PR57f7U9h9vGzg/edit?slide=id.p#slide=id.p`
+
 # Pengenalan Object Oriented Programming
 ## Apa itu Object Oriented Programming?
 - Object Oriented Programming adalah sudut pandang bahasa pemrograman yang berkonsep “objek”
